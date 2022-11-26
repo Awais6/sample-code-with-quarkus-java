@@ -14,13 +14,3 @@ public class GreetingResource {
         return "Hello RESTEasy";
     }
 }
-
-@Path("/outofworld")
-public class GreetingResource2 {
-
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
-        return "Hello G 1234";
-    }
-}

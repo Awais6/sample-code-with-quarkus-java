@@ -7,6 +7,19 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/hello-resteasy")
 public class GreetingResource {
+    
+    @GET
+    @Path("/hi")
+    public String hi() {
+        return "Hi from my side";
+    }
+    
+    @GET
+    @Path("/last")
+    public String last() {
+        
+        return "picking file";
+    }
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)

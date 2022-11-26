@@ -11,6 +11,16 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello REST222269696969Easy";
+        return "Hello RESTEasy";
+    }
+}
+
+@Path("/outofworld")
+public class GreetingResource2 {
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public String hello() {
+        return "Hello G 1234";
     }
 }
